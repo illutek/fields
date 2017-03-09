@@ -1,0 +1,5 @@
+.float__fotos {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}

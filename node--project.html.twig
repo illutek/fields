@@ -1,0 +1,9 @@
+<div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+      {# enkel om het aantal waarde te tonen #}
+      {% set fotosLength  = content.field_meer_fotos['#items'].getValue() | length %}      
+      {{ 'Aantal foto\'s:' }} {{ fotosLength }}
+      
+      {{ content.body }}
+      {# de class rond elk field wordt uitgevoerd op field--field_meer_fotos.html.twig #}
+      {{ content.field_meer_fotos }}
+  </div>
